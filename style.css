@@ -1,0 +1,90 @@
+#sidebar {
+  height: 100%;
+  float: right;
+  width: 200px;
+  border: 2px solid black;
+}
+
+#maincontainer {
+  max-width: 1024px;
+  margin: 50px auto;
+  display: grid;
+  grid-template-columns: 8fr 2fr;
+  grid-gap: 5px;
+}
+
+#content {
+  text-align: center;
+}
+
+#buttonwrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+@media (max-width: 770px) {
+  #buttonwrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.mainButton {
+  width: 200px;
+  height: 200px;
+  border: 3px solid #88d5ff;
+  border-radius:20px;
+  -moz-border-radius:20px;
+  -webkit-border-radius:20px;
+  display: inline-block;
+  margin: 20px;
+  position: relative;
+  box-shadow: 5px 10px 10px #ccc;
+}
+
+.mainButton:hover {
+  background-color: #88d5ff;
+}
+
+.regionID {
+  float: left;
+  margin: 5px;
+  font-size: 25px;
+  font-family: "Arial";
+  color: #7a7d7f;
+}
+
+.mainButtonImage {
+  max-height: 200px;
+  max-width: 150px;
+  height: auto;
+  position: absolute;
+    margin: auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.textView {
+  font-size: 20px;
+  font-family: "Arial";
+}
+
+.tableView {
+  padding: 10px;
+  margin-bottom: 5px;
+  display: block;
+}
+
+.tableView:hover {
+  background-color: #88d5ff;
+  cursor: pointer;
+}
+
+.warenkorbitem {
+  display: block;
+  text-align: center;
+  padding-top: 5px;
+  font-family: "Arial"
+}
